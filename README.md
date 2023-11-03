@@ -38,20 +38,6 @@ Follow these steps to host your static website on Amazon S3:
 
 3.3. Add the following JSON policy, replacing `your-bucket-name` with your actual bucket name:
 
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadForGetBucketObjects",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::your-bucket-name/*"
-        }
-    ]
-}
-
 3.4. Save the bucket policy.
 
 4. Enable Website Hosting
@@ -78,7 +64,6 @@ Support
 If you encounter any issues or have questions, feel free to create an issue in this repository for assistance.
 
 Happy web hosting!
-
 Make sure to replace placeholders like `your-bucket-name` with the actual bucket name and `your-region` with the appropriate AWS region you choose during setup.
 
 Custom Domain Configuration (Optional)
